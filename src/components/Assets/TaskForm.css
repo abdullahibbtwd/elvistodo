@@ -1,0 +1,99 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #dcdcdc;
+  }
+  .header >form{
+      width: 45%;
+  }
+  .task_input::placeholder{
+      color: #999;
+  }
+  .task_input{
+      font-size: 20px;
+      font-weight: 500;
+      background: #f9f9f9;
+      color: #000;
+      border: 1px solid #dfe3e6;
+      border-radius: 5px 5px 0 0;
+      padding: 8px 12px;
+      margin-bottom: 15px;
+      width: 100%;
+      -webkit-border-radius: 5px 5px 0 0;
+      -moz-border-radius: 5px 5px 0 0;
+      -ms-border-radius: 5px 5px 0 0;
+      -o-border-radius: 5px 5px 0 0;
+  }
+  .task_button_line{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  .tags{
+      display:flex;
+      justify-content: space-between;
+  }
+  .task_status{
+      font-size: 16px;
+      font-weight: 500;
+      border: 1px solid #999;
+      border-radius: 5px;
+      width: 120px;
+      height: 40px;
+      padding: 0 5px;
+      
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+  }
+  .task_submit{
+      font-size: 16px;
+      font-weight: 500;
+      background-color: #790faa;
+      border-radius: 5px ;
+      height: 40px;
+      padding: 3px 13px;
+      margin-left: 10px;
+      border: none;
+      color: #f9f9f9;
+      cursor: pointer;
+      -webkit-border-radius: 5px ;
+      -moz-border-radius: 5px ;
+      -ms-border-radius: 5px ;
+      -o-border-radius: 5px ;
+  }
+
+  @media (max-width:479px){
+    .task_input{
+        font-size: 16px;
+    }
+    .header{
+        width: 100%;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        display: flex;
+    }
+    .header >form{
+        width: 100%;
+        padding: 10px ;
+    }
+    .task_button_line{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .task_input{
+        width: 100%;
+        margin-top: 5px;
+    }
+    .task_status{
+      height: 30px;
+      font-size: 13px;
+    }
+    .task_submit{
+        height: 30px;
+        font-size: 13px;
+    }
+  }
